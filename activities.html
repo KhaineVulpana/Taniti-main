@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Things to Do - Visit Taniti</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">VISIT TANITI</div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="activities.html" class="active">THINGS TO DO</a></li>
+                <li><a href="stay.html">WHERE TO STAY</a></li>
+                <li><a href="plan.html">PLAN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html">HOME</a>
+        <a href="activities.html" class="active">THINGS TO DO</a>
+        <a href="stay.html">WHERE TO STAY</a>
+        <a href="plan.html">PLAN YOUR TRIP</a>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT</a>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>THINGS TO DO</h1>
+        </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-bar">
+                <span>FILTER BY:</span>
+                <select id="category-filter">
+                    <option value="all">All Categories</option>
+                    <option value="family">Family-Friendly</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="relaxation">Relaxation</option>
+                </select>
+                <select id="price-filter">
+                    <option value="all">All Prices</option>
+                    <option value="budget">Budget ($)</option>
+                    <option value="moderate">Moderate ($$)</option>
+                    <option value="premium">Premium ($$$)</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beaches & Water Sports (Relaxation) -->
+    <section id="beaches" class="activity-category">
+        <div class="container">
+            <h2>Beaches & Water Sports</h2>
+            <p class="category-description">Relax on pristine shores or dive into aquatic adventures</p>
+            <div class="activity-grid">
+                <div class="activity-card" data-category="relaxation family" data-price="budget">
+                    <div class="activity-image beach-relaxation"></div>
+                    <div class="activity-content">
+                        <h3>Beach Day</h3>
+                        <div class="activity-tags">
+                            <span class="tag tag-family">Family-Friendly</span>
+                            <span class="tag tag-relax">Relaxation</span>
+                        </div>
+                        <p>Sandy and rocky beaches perfect for swimming, sunbathing, and beach games</p>
+                        <div class="activity-meta">
+                            <span class="price">$</span>
+                            <span class="duration">All day</span>
+                            <span class="age">All ages</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="activity-card" data-category="adventure family" data-price="moderate">
+                    <div class="activity-image snorkeling"></div>
+                    <div class="activity-content">
+                        <h3>Snorkeling Tours</h3>
+                        <div class="activity-tags">
+                            <span class="tag tag-family">Family-Friendly</span>
+                            <span class="tag tag-adventure">Adventure</span>
+                        </div>
+                        <p>Explore vibrant coral reefs and tropical fish in crystal-clear waters</p>
+                        <div class="activity-meta">
+                            <span class="price">$$</span>
+                            <span class="duration">3 hours</span>
+                            <span class="age">Ages 8+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="activity-card" data-category="adventure" data-price="premium">
+                    <div class="activity-image fishing"></div>
+                    <div class="activity-content">
+                        <h3>Chartered Fishing</h3>
+                        <div class="activity-tags">
+                            <span class="tag tag-adventure">Adventure</span>
+                        </div>
+                        <p>Deep-sea fishing trips with experienced local captains</p>
+                        <div class="activity-meta">
+                            <span class="price">$$$</span>
+                            <span class="duration">4-8 hours</span>
+                            <span class="age">Ages 12+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rainforest Adventures (Adventure) -->
+    <section id="adventure" class="activity-category">
+        <div class="container">
+            <h2>Rainforest Adventures</h2>
+            <p class="category-description">Discover lush tropical forests and thrilling activities</p>
+            <div class="activity-grid">
+                <div class="activity-card" data-category="adventure family" data-price="moderate">
+                    <div class="activity-image hiking"></div>
+                    <div class="activity-content">
+                        <h3>Guided Rainforest Hikes</h3>
+                        <div class="activity-tags">
+                            <span class="tag tag-family">Family-Friendly</span>
+                            <span class="tag tag-adventure">Adventure</span>
+                        </div>
+                        <p>Explore tropical trails with knowledgeable guides, spot exotic wildlife</p>
+                        <div class="activity-meta">
+                            <span class="price">$$</span>
+                            <span class="duration">2-4 hours</span>
+                            <span class="age">Ages 6+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="activity-card" data-category="adventure" data-price="premium">
+                    <div class="activity-image ziplining"></div>
+                    <div class="activity-content">
+                        <h3>Canopy Zip-Lining</h3>
+                        <div class="activity-tags">
+                            <span class="tag tag-adventure">Adventure</span>
+                        </div>
+                        <p>Soar through the treetops on thrilling zip-line courses</p>
+                        <div class="activity-meta">
+                            <span class="price">$$$</span>
+                            <span class="duration">3 hours</span>
+                            <span class="age">Ages 10+, 50lb min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volcano & Culture -->
+    <section id="culture" class="activity-category">
+        <div class="container">
+            <h2>Volcano & Culture</h2>
+            <p class="category-description">Experience geological wonders and island heritage</p>
+            <div class="activity-grid">
+                <div class="activity-card" data-category="adventure family" data-price="moderate">
+                    <div class="activity-image volcano"></div>
+                    <div class="activity-content">
+                        <h3>Volcano Tours</h3>
+                        <div class="activity-tags">
+                            <span class="tag tag-family">Family-Friendly</span>
+                            <span class="tag tag-adventure">Adventure</span>
+                        </div>
+                        <p>Visit Taniti's active volcano with expert guides, witness nature's power</p>
+                        <div class="activity-meta">
+                            <span class="price">$$</span>
+                            <span class="duration">Half day</span>
+                            <span class="age">Ages 8+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="activity-card" data-category="relaxation family" data-price="budget">
+                    <div class="activity-image museum"></div>
+                    <div class="activity-content">
+                        <h3>Museums & Cultural Sites</h3>
+                        <div class="activity-tags">
+                            <span class="tag tag-family">Family-Friendly</span>
+                            <span class="tag tag-relax">Relaxation</span>
+                        </div>
+                        <p>Learn about Tanitian history, culture, and traditions</p>
+                        <div class="activity-meta">
+                            <span class="price">$</span>
+                            <span class="duration">1-2 hours</span>
+                            <span class="age">All ages</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Guide -->
+    <section class="pricing-guide">
+        <div class="container">
+            <h3>Pricing Guide</h3>
+            <p><strong>$</strong> Budget: Under $25 per person | <strong>$$</strong> Moderate: $25-75 per person | <strong>$$$</strong> Premium: $75+ per person</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#about">About Taniti</a>
+                <a href="#contact">Contact</a>
+                <a href="#faq">FAQ</a>
+                <a href="activities.html">Things to Do</a>
+                <a href="stay.html">Where to Stay</a>
+                <a href="plan.html">Plan Your Trip</a>
+            </div>
+            <p class="footer-copy">&copy; 2024 Taniti Tourism Board. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

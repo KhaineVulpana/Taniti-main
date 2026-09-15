@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where to Stay - Visit Taniti</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">VISIT TANITI</div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="activities.html">THINGS TO DO</a></li>
+                <li><a href="stay.html" class="active">WHERE TO STAY</a></li>
+                <li><a href="plan.html">PLAN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html">HOME</a>
+        <a href="activities.html">THINGS TO DO</a>
+        <a href="stay.html" class="active">WHERE TO STAY</a>
+        <a href="plan.html">PLAN YOUR TRIP</a>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT</a>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>WHERE TO STAY</h1>
+        </div>
+    </section>
+    <!-- Pricing Guide -->
+    <section class="pricing-guide">
+        <div class="container">
+            <h3>Accommodation Pricing Guide</h3>
+            <p><strong>$</strong> Budget: Under $75/night | <strong>$$</strong> Moderate: $75-200/night | <strong>$$$</strong> Premium: $200-400/night | <strong>$$$$</strong> Luxury: $400+/night</p>
+        </div>
+    </section>
+    <!-- Filter Bar -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-bar">
+                <span>FILTER BY:</span>
+                <select id="type-filter">
+                    <option value="all">All Types</option>
+                    <option value="hotel">Hotels</option>
+                    <option value="bb">B&Bs</option>
+                    <option value="rental">Rentals</option>
+                    <option value="budget">Budget</option>
+                </select>
+                <select id="price-filter">
+                    <option value="all">All Prices</option>
+                    <option value="budget">Budget ($)</option>
+                    <option value="moderate">Moderate ($$)</option>
+                    <option value="premium">Premium ($$$)</option>
+                    <option value="luxury">Luxury ($$$$)</option>
+                </select>
+                <select id="location-filter">
+                    <option value="all">All Locations</option>
+                    <option value="bay">Yellow Leaf Bay</option>
+                    <option value="city">Taniti City</option>
+                    <option value="beach">Beachfront</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accommodations Grid -->
+    <section class="accommodations-section">
+        <div class="container">
+            <div class="accommodation-grid">
+                <!-- Hotels -->
+                <div class="accommodation-card" data-type="hotel" data-price="moderate premium">
+                    <div class="accommodation-image hotel"></div>
+                    <div class="accommodation-content">
+                        <h3>Hotels</h3>
+                        <div class="price-range">From $150/night</div>
+                        <p>Budget to 4-star options available across the island</p>
+                        <ul class="amenities">
+                            <li>Daily housekeeping</li>
+                            <li>On-site restaurants</li>
+                            <li>Pool and fitness facilities</li>
+                        </ul>
+                        <a href="#" class="btn btn-secondary">View Hotels</a>
+                    </div>
+                </div>
+
+                <!-- B&Bs -->
+                <div class="accommodation-card" data-type="bb" data-price="moderate">
+                    <div class="accommodation-image bb"></div>
+                    <div class="accommodation-content">
+                        <h3>Bed & Breakfasts</h3>
+                        <div class="price-range">From $120/night</div>
+                        <p>Personal service with home-cooked breakfast included</p>
+                        <ul class="amenities">
+                            <li>Breakfast included</li>
+                            <li>Local host knowledge</li>
+                            <li>Charming atmosphere</li>
+                        </ul>
+                        <a href="#" class="btn btn-secondary">View B&Bs</a>
+                    </div>
+                </div>
+
+                <!-- Beach Houses -->
+                <div class="accommodation-card" data-type="rental" data-price="premium">
+                    <div class="accommodation-image beach-house"></div>
+                    <div class="accommodation-content">
+                        <h3>Beach Houses</h3>
+                        <div class="price-range">From $250/night</div>
+                        <p>Private beachfront rentals perfect for families and groups</p>
+                        <ul class="amenities">
+                            <li>Full kitchen</li>
+                            <li>Private beach access</li>
+                            <li>Multiple bedrooms</li>
+                        </ul>
+                        <a href="#" class="btn btn-secondary">View Rentals</a>
+                    </div>
+                </div>
+
+                <!-- Resort -->
+                <div class="accommodation-card" data-type="hotel" data-price="luxury">
+                    <div class="accommodation-image resort"></div>
+                    <div class="accommodation-content">
+                        <h3>4-Star Resort</h3>
+                        <div class="price-range">From $400/night</div>
+                        <p>Luxury amenities with all-inclusive packages available</p>
+                        <ul class="amenities">
+                            <li>Spa and wellness center</li>
+                            <li>Multiple restaurants</li>
+                            <li>Concierge service</li>
+                        </ul>
+                        <a href="#" class="btn btn-secondary">View Resort</a>
+                    </div>
+                </div>
+
+                <!-- Private Condos -->
+                <div class="accommodation-card" data-type="rental" data-price="moderate">
+                    <div class="accommodation-image condo"></div>
+                    <div class="accommodation-content">
+                        <h3>Private Condos</h3>
+                        <div class="price-range">From $180/night</div>
+                        <p>Self-catering units with modern amenities</p>
+                        <ul class="amenities">
+                            <li>Full kitchen</li>
+                            <li>Washer/dryer</li>
+                            <li>Living areas</li>
+                        </ul>
+                        <a href="#" class="btn btn-secondary">View Condos</a>
+                    </div>
+                </div>
+
+                <!-- Budget Hostel -->
+                <div class="accommodation-card" data-type="budget" data-price="budget">
+                    <div class="accommodation-image hostel"></div>
+                    <div class="accommodation-content">
+                        <h3>Budget Hostel</h3>
+                        <div class="price-range">From $35/night</div>
+                        <p>Backpacker-friendly accommodations with social atmosphere</p>
+                        <ul class="amenities">
+                            <li>Shared and private rooms</li>
+                            <li>Common areas</li>
+                            <li>Budget-friendly</li>
+                        </ul>
+                        <a href="#" class="btn btn-secondary">View Hostel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badge -->
+    <section class="trust-section">
+        <div class="container">
+            <p><strong>All accommodations are regulated and inspected by the Tanitian government</strong></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#about">About Taniti</a>
+                <a href="#contact">Contact</a>
+                <a href="#faq">FAQ</a>
+                <a href="activities.html">Things to Do</a>
+                <a href="stay.html">Where to Stay</a>
+                <a href="plan.html">Plan Your Trip</a>
+            </div>
+            <p class="footer-copy">&copy; 2024 Taniti Tourism Board. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
